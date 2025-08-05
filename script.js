@@ -159,9 +159,3 @@ function calendari(widget, data) {
 }
 
 calendari(document.getElementById("calendari"), new Date());
-// Focar os botões de navegação para teclado
-document.querySelectorAll('.boto-prev, .boto-next').forEach(botao => {
-  botao.setAttribute('tabindex', '0');
-  botao.setAttribute('aria-label', botao.classList.contains('boto-prev') ? 
-    'Mês anterior' : 'Próximo mês');
-});
